@@ -1,0 +1,84 @@
+/* ==========================================================================
+   Nimbus Weather Clone - Weather-Adaptive Dynamic Themes
+   Morphs the background and lighting based on the active weather state
+   ========================================================================== */
+
+/* Clear Day - Brilliant Azure Sky */
+body.theme-clear-day {
+    --bg-gradient-start: #0284c7;
+    --bg-gradient-end: #0369a1;
+    --accent-color: #fbbf24;
+    --accent-glow: rgba(251, 191, 36, 0.4);
+}
+
+/* Clear Night - Deep Cosmic Indigo */
+body.theme-clear-night {
+    --bg-gradient-start: #0b0f19;
+    --bg-gradient-end: #1e1b4b;
+    --accent-color: #38bdf8;
+    --accent-glow: rgba(56, 189, 248, 0.35);
+}
+
+/* Cloudy Day - Soft Silver Blue */
+body.theme-cloudy-day {
+    --bg-gradient-start: #334155;
+    --bg-gradient-end: #475569;
+    --accent-color: #67e8f9;
+    --accent-glow: rgba(103, 232, 249, 0.35);
+}
+
+/* Cloudy Night - Deep Twilight Charcoal */
+body.theme-cloudy-night {
+    --bg-gradient-start: #0f172a;
+    --bg-gradient-end: #1e293b;
+    --accent-color: #94a3b8;
+    --accent-glow: rgba(148, 163, 184, 0.3);
+}
+
+/* Overcast - Moody Cool Grey */
+body.theme-overcast {
+    --bg-gradient-start: #27272a;
+    --bg-gradient-end: #3f3f46;
+    --accent-color: #e4e4e7;
+    --accent-glow: rgba(228, 228, 231, 0.25);
+}
+
+/* Rain - Slate Blue with Water Glow */
+body.theme-rain {
+    --bg-gradient-start: #0f2027;
+    --bg-gradient-end: #203a43;
+    --accent-color: #38bdf8;
+    --accent-glow: rgba(56, 189, 248, 0.4);
+}
+
+/* Heavy Rain - Oceanic Tempest */
+body.theme-heavy-rain {
+    --bg-gradient-start: #091a28;
+    --bg-gradient-end: #162a3e;
+    --accent-color: #0284c7;
+    --accent-glow: rgba(2, 132, 199, 0.45);
+}
+
+/* Thunderstorm - Electric Purple Storm */
+body.theme-storm {
+    --bg-gradient-start: #1e112a;
+    --bg-gradient-end: #2c1a4d;
+    --accent-color: #facc15;
+    --accent-glow: rgba(250, 204, 21, 0.45);
+}
+
+/* Snow - Glacial Frosted Cyan */
+body.theme-snow {
+    --bg-gradient-start: #162638;
+    --bg-gradient-end: #1e3a5f;
+    --accent-color: #bae6fd;
+    --accent-glow: rgba(186, 230, 253, 0.45);
+}
+
+/* Fog - Ethereal Mist */
+body.theme-fog {
+    --bg-gradient-start: #1e293b;
+    --bg-gradient-end: #334155;
+    --accent-color: #cbd5e1;
+    --accent-glow: rgba(203, 213, 225, 0.3);
+}

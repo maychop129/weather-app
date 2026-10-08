@@ -1,0 +1,139 @@
+/* ==========================================================================
+   Nimbus Weather Clone - Micro-Animations & Keyframes
+   ========================================================================== */
+
+/* Spin Animation */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.anim-spin-slow {
+    transform-origin: 32px 32px;
+    animation: spin 16s linear infinite;
+}
+
+/* Floating Clouds */
+@keyframes floatCloud {
+    0%, 100% { transform: translateY(0px) translateX(0px); }
+    50% { transform: translateY(-3px) translateX(2px); }
+}
+
+.anim-float {
+    animation: floatCloud 5s ease-in-out infinite;
+}
+
+/* Twinkling Stars */
+@keyframes twinkle {
+    0%, 100% { opacity: 0.2; transform: scale(0.85); }
+    50% { opacity: 1; transform: scale(1.15); }
+}
+
+.anim-twinkle {
+    transform-origin: 48px 22px;
+    animation: twinkle 3s ease-in-out infinite;
+}
+
+.anim-twinkle-delay {
+    transform-origin: 18px 15px;
+    animation: twinkle 3.5s ease-in-out 1.5s infinite;
+}
+
+/* Rain Drop Splashes */
+@keyframes rainDrop1 {
+    0% { transform: translateY(-6px); opacity: 0; }
+    30% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { transform: translateY(6px); opacity: 0; }
+}
+
+.anim-rain-drop-1 {
+    animation: rainDrop1 1.2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.anim-rain-drop-2 {
+    animation: rainDrop1 1.2s cubic-bezier(0.4, 0, 0.6, 1) 0.35s infinite;
+}
+
+.anim-rain-drop-3 {
+    animation: rainDrop1 1.2s cubic-bezier(0.4, 0, 0.6, 1) 0.7s infinite;
+}
+
+.anim-rain-fast-1 {
+    animation: rainDrop1 0.75s linear infinite;
+}
+
+.anim-rain-fast-2 {
+    animation: rainDrop1 0.75s linear 0.2s infinite;
+}
+
+.anim-rain-fast-3 {
+    animation: rainDrop1 0.75s linear 0.4s infinite;
+}
+
+/* Snow Drifting */
+@keyframes snowFlake {
+    0% { transform: translateY(-4px) translateX(0px); opacity: 0.3; }
+    50% { transform: translateY(2px) translateX(2px); opacity: 1; }
+    100% { transform: translateY(8px) translateX(-2px); opacity: 0.2; }
+}
+
+.anim-snow-1 {
+    animation: snowFlake 2.5s ease-in-out infinite;
+}
+
+.anim-snow-2 {
+    animation: snowFlake 3s ease-in-out 0.8s infinite;
+}
+
+.anim-snow-3 {
+    animation: snowFlake 2.8s ease-in-out 1.6s infinite;
+}
+
+/* Fog Drifting */
+@keyframes driftRight {
+    0%, 100% { transform: translateX(-3px); }
+    50% { transform: translateX(3px); }
+}
+
+@keyframes driftLeft {
+    0%, 100% { transform: translateX(3px); }
+    50% { transform: translateX(-3px); }
+}
+
+.anim-drift {
+    animation: driftRight 4s ease-in-out infinite;
+}
+
+.anim-drift-rev {
+    animation: driftLeft 5s ease-in-out infinite;
+}
+
+/* Lightning Flashes */
+@keyframes lightningFlash {
+    0%, 88%, 94%, 100% { opacity: 0; filter: drop-shadow(0 0 0 transparent); }
+    90%, 92% { opacity: 1; filter: drop-shadow(0 0 12px #facc15); }
+}
+
+.anim-lightning {
+    animation: lightningFlash 4.5s ease infinite;
+}
+
+/* Radar Beacon Pulse */
+@keyframes beaconPulse {
+    0% { transform: scale(0.6); opacity: 0.9; }
+    70% { transform: scale(2.2); opacity: 0; }
+    100% { transform: scale(2.4); opacity: 0; }
+}
+
+/* Fade in Down for Dropdown */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
