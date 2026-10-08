@@ -1,4 +1,4 @@
-# 🌦️ Nimbus Weather — Next-Gen Live Weather Clone
+# 🌦️ Nimbus Weather — Next-Gen Live Weather App
 
 > An ultra-modern, glassmorphic weather application with **live GPS auto-detection**, **dynamic 60 FPS weather particle canvas**, **real-time animated precipitation radar**, and **comprehensive meteorological analytics**.
 

@@ -1,5 +1,5 @@
 """
-Flask Backend Server for Weather Clone Web App
+Flask Backend Server for Weather App
 Provides local static serving, API proxying with caching, and fallback data.
 """
 
@@ -30,7 +30,7 @@ def set_cached(key, data):
 def fetch_json(url, timeout=6):
     req = urllib.request.Request(
         url,
-        headers={'User-Agent': 'WeatherCloneApp/1.0 (Educational/Project)'}
+        headers={'User-Agent': 'NimbusWeatherApp/1.0 (Educational/Project)'}
     )
     with urllib.request.urlopen(req, timeout=timeout) as response:
         return json.loads(response.read().decode('utf-8'))
@@ -168,7 +168,7 @@ def get_radar_frames():
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
     print(f"==================================================")
-    print(f"Nimbus Weather Clone server running at:")
+    print(f"Nimbus Weather App server running at:")
     print(f"http://127.0.0.1:{port}")
     print(f"Press Ctrl+C to stop.")
     print(f"==================================================")

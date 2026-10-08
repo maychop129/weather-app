@@ -1,5 +1,5 @@
 /**
- * Utility functions for Nimbus Weather Clone
+ * Utility functions for Nimbus Weather App
  * Unit conversions, WMO weather codes, moon phase, lifestyle scores, formatting
  */
 

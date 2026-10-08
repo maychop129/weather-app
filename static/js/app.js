@@ -1,5 +1,5 @@
 /**
- * Nimbus Weather Clone - Main Application Controller
+ * Nimbus Weather App - Main Application Controller
  * Manages state, UI updates, events, charts, radar, and sound.
  */
 
@@ -865,7 +865,7 @@ class WeatherApp {
                           `📈 High: ${high} • Low: ${low}\n` +
                           `💨 Wind: ${WeatherUtils.formatWind(cur.wind_speed_10m, this.tempUnit === 'F' ? 'imperial' : 'metric')}\n` +
                           `💧 Humidity: ${Math.round(cur.relative_humidity_2m)}% • UV: ${Math.round(cur.uv_index || 0)}\n` +
-                          `🌐 Live Weather Clone App`;
+                          `🌐 Live Weather App`;
 
         if (navigator.share) {
             try {

@@ -1,5 +1,5 @@
 """
-Launcher script for Nimbus Weather Clone
+Launcher script for Nimbus Weather App
 Starts the Flask server and opens the web application in your default browser.
 """
 
@@ -39,7 +39,7 @@ if __name__ == '__main__':
     threading.Thread(target=open_browser, args=(port,), daemon=True).start()
     
     print("=" * 60)
-    print("  Nimbus Weather Clone - Live Weather Web Application")
+    print("  Nimbus Weather App - Live Weather Web Application")
     print(f"  Running at: http://127.0.0.1:{port}")
     print("  Press Ctrl+C to stop the server")
     print("=" * 60)

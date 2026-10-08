@@ -1,7 +1,7 @@
 {
-  "name": "Nimbus Weather Clone",
+  "name": "Nimbus Weather App",
   "short_name": "Nimbus",
-  "description": "Next-generation live weather clone with real-time GPS tracking, animated radar, and hourly forecasts.",
+  "description": "Next-generation live weather application with real-time GPS tracking, animated radar, and hourly forecasts.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0f172a",
